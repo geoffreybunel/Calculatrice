@@ -8,29 +8,31 @@
     <link rel="stylesheet" href="src/styles/output.css">
 </head>
 <body class="bg-gray-300 flex justify-center items-center h-dvh">
-    <div class="calculator font-(family-name:Arial, sans-serif) bg-white rounded-4xl w-96 max-w-5xl p-5">
-        <input type="text" id="display" class="w-full h-24 rounded-2xl border-3 bg-black mb-4" readonly>
+    <div class="calculator font-sans bg-white rounded-4xl w-96 max-w-5xl p-5">
+        <input type="text" id="input" class="w-full h-24 rounded-2xl border-3 bg-black text-white text-4xl text-right mb-4 p-2" readonly>
         <div class="grid grid-cols-4 gap-4">
-            <button class="bg-gray-400 text-white h-15 text-3xl rounded-xl">AC</button>
-            <button class="bg-gray-400 text-white h-15 text-3xl rounded-xl">+/-</button>
-            <button class="bg-gray-400 text-white h-15 text-3xl rounded-xl">%</button>
-            <button class="bg-amber-500 bg- text-white h-15 text-3xl rounded-xl">÷</button>
-            <button class="bg-black text-white h-15 text-3xl rounded-xl">7</button>
-            <button class="bg-black text-white h-15 text-3xl rounded-xl">8</button>
-            <button class="bg-black text-white h-15 text-3xl rounded-xl">9</button>
-            <button class="bg-amber-500 text-white h-15 text-3xl rounded-xl">×</button>
-            <button class="bg-black text-white h-15 text-3xl rounded-xl">4</button>
-            <button class="bg-black text-white h-15 text-3xl rounded-xl">5</button>
-            <button class="bg-black text-white h-15 text-3xl rounded-xl">6</button>
-            <button class="bg-amber-500 text-white h-15 text-3xl rounded-xl">-</button>
-            <button class="bg-black text-white h-15 text-3xl rounded-xl">1</button>
-            <button class="bg-black text-white h-15 text-3xl rounded-xl">2</button>
-            <button class="bg-black text-white h-15 text-3xl rounded-xl">3</button>
-            <button class="bg-amber-500 text-white h-15 text-3xl rounded-xl">+</button>
-            <button class="bg-black text-white h-15 text-3xl rounded-xl col-start-1 col-end-3">0</button>
-            <button class="bg-black text-white h-15 text-3xl rounded-xl">,</button>
-            <button class="bg-amber-500 text-white h-15 text-3xl rounded-xl">=</button>
+            <button class="btnDelete bg-gray-400 text-white h-15 text-3xl rounded-xl">AC</button>
+            <button class="btnNegation bg-gray-400 text-white h-15 text-3xl rounded-xl">+/-</button>
+            <button class="btnDisplay bg-gray-400 text-white h-15 text-3xl rounded-xl">%</button>
+            <button class="btnDisplay bg-amber-500 text-white h-15 text-3xl rounded-xl">÷</button>
+            <button class="btnDisplay bg-black text-white h-15 text-3xl rounded-xl">7</button>
+            <button class="btnDisplay bg-black text-white h-15 text-3xl rounded-xl">8</button>
+            <button class="btnDisplay bg-black text-white h-15 text-3xl rounded-xl">9</button>
+            <button class="btnDisplay bg-amber-500 text-white h-15 text-3xl rounded-xl">×</button>
+            <button class="btnDisplay bg-black text-white h-15 text-3xl rounded-xl">4</button>
+            <button class="btnDisplay bg-black text-white h-15 text-3xl rounded-xl">5</button>
+            <button class="btnDisplay bg-black text-white h-15 text-3xl rounded-xl">6</button>
+            <button class="btnDisplay bg-amber-500 text-white h-15 text-3xl rounded-xl">-</button>
+            <button class="btnDisplay bg-black text-white h-15 text-3xl rounded-xl">1</button>
+            <button class="btnDisplay bg-black text-white h-15 text-3xl rounded-xl">2</button>
+            <button class="btnDisplay bg-black text-white h-15 text-3xl rounded-xl">3</button>
+            <button class="btnDisplay bg-amber-500 text-white h-15 text-3xl rounded-xl">+</button>
+            <button class="btnDisplay bg-black text-white h-15 text-3xl rounded-xl col-start-1 col-end-3">0</button>
+            <button class="btnDisplay bg-black text-white h-15 text-3xl rounded-xl">,</button>
+            <button class="btnEqual bg-amber-500 text-white h-15 text-3xl rounded-xl">=</button>
         </div>
     </div>
+
+    <script src="src/scripts/main.js"></script>
 </body>
 </html>
