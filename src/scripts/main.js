@@ -16,6 +16,8 @@ function calculate() {
     for (let i = 0; i < operators.length; i++) {
         const operator = operators[i];
         
+        
+
         if (inputValue.includes(operator)) {
             const parts = inputValue.split(operator);
             const num1 = Number(parts[0]);
@@ -30,8 +32,12 @@ function calculate() {
                 return;
             }
             if (operator === "×") {
-                input.value = num1 * num2;
-                return;
+                if (num1 === -num1) {
+                    
+                } else {
+                    input.value = num1 * num2;
+                    return;
+                }
             }
             if (operator === "÷") {
                 if (num2 === 0) {
